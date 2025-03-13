@@ -1,0 +1,88 @@
+/* layout.css - Estruturas principais da página */
+
+/* Container principal */
+.l-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+.l-header {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 1rem 0;
+}
+
+.l-header .l-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Hero section */
+.l-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('https://lh5.googleusercontent.com/proxy/SgzDOrx1BcOWskMDYP3Y_fesefEnoRPmxaaNiZ6Azi3KneCv67xiyzDFu9WLLJbSwyIitJDTwO7XWTzh7QIbUnY');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 8rem 0;
+}
+
+/* Featured section */
+.l-featured {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+/* About section */
+.l-about {
+    padding: 5rem 0;
+    background-color: #f9f9f9;
+}
+
+.l-about .l-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Footer */
+.l-footer {
+    background-color: #222;
+    color: #fff;
+    padding: 3rem 0 1rem;
+}
+
+.l-footer .l-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.l-copyright {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Responsividade para layouts */
+@media (max-width: 768px) {
+    .l-about .l-container {
+        flex-direction: column;
+    }
+    
+    .l-footer .l-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}

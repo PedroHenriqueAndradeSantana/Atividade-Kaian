@@ -1,0 +1,13 @@
+/* theme.css - Variáveis de tema e estilos relacionados */
+
+:root {
+    /* Cores primárias */
+    --color-primary: #8b4513;
+    --color-primary-dark: #5a2d0c;
+    --color-primary-light: #c17d4f;
+    
+    /* Cores neutras */
+    --color-text: #333;
+    --color-text-light: #666;
+    --color-background: #fff;
+}

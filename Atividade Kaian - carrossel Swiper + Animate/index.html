@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor Gourmet | Restaurante</title>
+    
+    <!-- CDN do Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- CDN do Swiper.js (CSS) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    
+    <!-- Nossos estilos organizados com SMACSS -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/module.css">
+    <link rel="stylesheet" href="css/state.css">
+    <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+    <header class="l-header">
+        <div class="l-container">
+            <div class="m-logo">
+                <h1 class="animate__animated animate__fadeInDown">Sabor Gourmet</h1>
+                <p class="m-slogan animate__animated animate__fadeIn animate__delay-1s">Experiência gastronômica inesquecível</p>
+            </div>
+            <nav class="m-nav">
+                <ul class="m-menu">
+                    <li><a href="#" class="is-active">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Reservas</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+                <button class="m-menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="l-hero">
+            <div class="l-container">
+                <h2 class="animate__animated animate__fadeInUp">Bem-vindo ao Sabor Gourmet</h2>
+                <p class="animate__animated animate__fadeInUp animate__delay-1s">Onde cada prato conta uma história</p>
+            </div>
+        </section>
+
+        <section class="l-featured">
+            <div class="l-container">
+                <h2>Nossos Destaques</h2>
+                
+                <!-- Swiper Carrossel -->
+                <div class="swiper m-dishes-carousel">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide m-dish-card">
+                            <img src="https://cardapio.mobi/malibupark/wp-content/uploads/sites/2/2022/07/risoto-funghi-1140x0.png" alt="Prato especial 1">
+                            <h3>Risoto de Funghi</h3>
+                            <p>Arroz arbóreo, mix de cogumelos e parmesão</p>
+                        </div>
+                        <div class="swiper-slide m-dish-card">
+                            <img src="https://padariavillalourdes.com.br/web/image/product.template/2767/image_1024?unique=7ec9ed4" alt="Prato especial 2">
+                            <h3>Filé ao Molho Madeira</h3>
+                            <p>Filé mignon grelhado com molho madeira e batatas rústicas</p>
+                        </div>
+                        <div class="swiper-slide m-dish-card">
+                            <img src="https://jornaldoplanalto.com.br/wp-content/uploads/2022/04/Hana-Teppan-de-Salmao-Divulgacao.png" alt="Prato especial 3">
+                            <h3>Salmão Grelhado</h3>
+                            <p>Salmão fresco com legumes da estação e molho de ervas</p>
+                        </div>
+                        <div class="swiper-slide m-dish-card">
+                            <img src="https://png.pngtree.com/png-clipart/20240324/original/pngtree-top-view-vegan-mediterranean-pasta-png-image_14670153.png" alt="Prato especial 4">
+                            <h3>Massa Mediterrânea</h3>
+                            <p>Fettuccine com tomates, azeitonas, alcaparras e azeite</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Navegação do Swiper -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="l-about">
+            <div class="l-container">
+                <div class="m-about-content">
+                    <h2>Nossa História</h2>
+                    <p>Fundado em 2010, o Sabor Gourmet nasceu da paixão pela gastronomia e pelo desejo de proporcionar experiências únicas. Nossa equipe de chefs especializados seleciona os melhores ingredientes para criar pratos que encantam todos os sentidos.</p>
+                    <a href="#" class="m-button">Conheça mais</a>
+                </div>
+               
+            </div>
+        </section>
+    </main>
+
+    <footer class="l-footer">
+        <div class="l-container">
+            <div class="m-footer-info">
+                <h3>Sabor Gourmet</h3>
+                <address>
+                    Rua das Delícias, 123<br>
+                    Centro - São Paulo/SP<br>
+                    Tel: (11) 5555-1234
+                </address>
+            </div>
+            <div class="m-footer-hours">
+                <h3>Horário de Funcionamento</h3>
+                <p>Segunda a Sexta: 12h às 15h | 19h às 23h</p>
+                <p>Sábados e Domingos: 12h às 23h</p>
+            </div>
+            <div class="m-footer-social">
+                <h3>Siga-nos</h3>
+                <div class="m-social-icons">
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Twitter">TW</a>
+                </div>
+            </div>
+        </div>
+        <div class="l-copyright">
+            <p>&copy; 2025 Sabor Gourmet. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- CDN do Swiper.js (JavaScript) -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    <!-- Nosso JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

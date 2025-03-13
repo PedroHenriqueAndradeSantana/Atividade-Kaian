@@ -1,0 +1,64 @@
+/* state.css - Estados dos componentes */
+
+/* Estado ativo para links do menu */
+.m-menu a.is-active {
+    color: #8b4513;
+    font-weight: 700;
+}
+
+.m-menu a.is-active::after {
+    width: 100%;
+}
+
+/* Estado do menu mobile quando aberto */
+.m-menu.is-open {
+    display: flex;
+}
+
+/* Estado do botão de menu quando aberto */
+.m-menu-toggle.is-active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.m-menu-toggle.is-active span:nth-child(2) {
+    opacity: 0;
+}
+
+.m-menu-toggle.is-active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Estados de hover para cartões */
+.m-dish-card.is-hovered {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Estados para botões */
+.m-button.is-disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.m-button.is-loading {
+    position: relative;
+    color: transparent;
+}
+
+.m-button.is-loading::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
